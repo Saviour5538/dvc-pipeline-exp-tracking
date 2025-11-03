@@ -11,7 +11,7 @@ with open('params.yaml','r') as file:
     params = yaml.safe_load(file)
 
 
-n_components = params['feature_engineering']['n_component']
+n_components = params['feature_engineering']['n_components']
 
 X_train = train.drop(columns=['Placed'])
 y_train = train['Placed']
